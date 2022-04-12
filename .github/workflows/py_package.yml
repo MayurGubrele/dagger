@@ -9,6 +9,6 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - name: Zip Folder
-        run: zip -r release.zip ../../dagger-py-functions
+        run: zip -r dagger-py-functions.zip /dagger/dagger-py-functions/
       - name: Release to Github
         run: echo "Release"
