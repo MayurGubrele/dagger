@@ -8,7 +8,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
-      - name: Zip Folder
-        run: zip -r dagger-py-functions.zip ./../../dagger-py-functions/
       - name: Release to Github
-        run: echo "Release"
+        run: echo $GITHUB_WORKSPACE
+      - name: Zip Folder
+        working-directory: ./dagger
+        run: zip -r dagger-py-functions.zip $GITHUB_WORKSPACE/dagger-py-functions
