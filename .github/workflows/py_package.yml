@@ -11,5 +11,4 @@ jobs:
       - name: Release to Github
         run: echo $GITHUB_WORKSPACE
       - name: Zip Folder
-        working-directory: ./dagger
         run: zip -r dagger-py-functions.zip $GITHUB_WORKSPACE/dagger-py-functions
