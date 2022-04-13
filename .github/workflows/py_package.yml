@@ -18,4 +18,5 @@ jobs:
         uses: ncipollo/release-action@v1
         with:
           artifacts: "dagger-py-functions.zip"
+          tag: "vTEST.0.1"
           token: ${{ secrets.GITHUB_TOKEN }}
