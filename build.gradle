@@ -64,7 +64,3 @@ publishing {
         }
     }
 }
-
-artifactoryPublish {
-    publications('myzip')
-}
