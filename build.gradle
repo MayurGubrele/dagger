@@ -1,9 +1,9 @@
-ext {
-    flinkVersion = System.getenv('flinkVersion') ?: '1.14.3'
-}
-
 plugins {
     'maven-publish'
+}
+
+ext {
+    flinkVersion = System.getenv('flinkVersion') ?: '1.14.3'
 }
 
 subprojects {
