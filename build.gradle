@@ -50,7 +50,9 @@ publishing {
     publications {
         myZip(MavenPublication) {
             artifact makeZip
-            groupId 'dagger-py'
+            groupId 'io.odpf'
+            artifactId 'dagger-py-functions'
+            version 'v-0'
         }
     }
 
