@@ -40,9 +40,9 @@ subprojects {
 
 task makeZip(type: Zip) {
     from fileTree(dir: 'dagger')
-    include '**/dagger-py-functions/*'
-    archiveName "mayurtest.zip"
-    destinationDir file("$buildDir/libs/")
+    include '**/*'
+    archiveName "dagger-py-functions.zip"
+    destinationDir file("$rootDir/")
     description "Assemble archive $archiveName into ${relativePath(destinationDir)}"
 }
 
