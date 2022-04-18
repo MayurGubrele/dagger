@@ -50,7 +50,7 @@ publishing {
     publications {
         myZip(MavenPublication) {
             artifact makeZip
-            groupId project.group
+            groupId 'dagger-py'
         }
     }
 
